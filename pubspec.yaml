@@ -43,10 +43,7 @@ dependencies:
   razorpay_flutter: ^1.3.7
   get: ^4.6.6
   flutter_paystack: ^1.0.7 
-  awesome_notifications:
-    git:
-      url: https://github.com/Jainishcodee/awesome_notification_7.21.git
-      ref: main
+  awesome_notifications: ^0.10.0
   audio_service: ^0.18.12
   just_audio: ^0.9.36
   just_audio_background: ^0.0.1-beta.11
