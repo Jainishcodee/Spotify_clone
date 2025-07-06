@@ -42,8 +42,7 @@ dependencies:
   share_plus: ^10.1.4
   razorpay_flutter: ^1.3.7
   get: ^4.6.6
-  flutter_paystack: ^1.0.7
-  awesome_notifications: 
+  flutter_paystack: ^1.0.7 
   awesome_notifications:
     git:
       url: https://github.com/Jainishcodee/awesome_notification_7.21.git
