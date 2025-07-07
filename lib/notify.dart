@@ -194,7 +194,7 @@ class Notify extends GetxController {
     if (value) {
       showMusicNotification();
     } else {
-      LocalNotificationService.cancel(1);
+      LocalNotificationService.cancelNotification(1);
     }
   }
 
@@ -213,7 +213,6 @@ class Notify extends GetxController {
       id: 1,
       title: 'Now Playing',
       body: currentSongName.value,
-      payload: {'action': 'MEDIA'}, // Optional payload if needed later
     );
   }
 
