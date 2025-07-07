@@ -184,7 +184,7 @@ class Notify extends GetxController {
       if (isIconPlay.value) {
         showMusicNotification(); // Show notification when music is playing
       } else {
-        LocalNotificationService.cancel(1); 
+        LocalNotificationService.cancelNotification(1); 
       }
     });
   }
@@ -230,7 +230,7 @@ class Notify extends GetxController {
   Future<void> stopAudio() async {
     await audioPlayer.stop();
     setIconPlay(false);
-    LocalNotificationService.cancel(1);
+    LocalNotificationService.cancelNotification(1);
   }
 
   @override
