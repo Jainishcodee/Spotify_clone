@@ -38,10 +38,10 @@ class LocalNotificationService {
 
     await _notificationsPlugin.show(id, title, body, details);
   }
-
-  
   static Future<void> cancelNotification(int id) async {
     await _notificationsPlugin.cancel(id);
   }
+  
+
 }
-}
+
