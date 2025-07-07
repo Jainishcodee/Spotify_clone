@@ -184,7 +184,7 @@ class Notify extends GetxController {
       if (isIconPlay.value) {
         showMusicNotification(); // Show notification when music is playing
       } else {
-        LocalNotificationService.cancel(1); // Cancel notification when stopped
+        LocalNotificationService.cancel(1); 
       }
     });
   }
