@@ -19,6 +19,10 @@ class LocalNotificationService {
     });
   }
 
+  static Future<void> cancelNotification(int id) async {
+    await _notificationsPlugin.cancel(id);
+  }
+
   static Future<void> showNotification({
     required int id,
     required String title,
@@ -38,9 +42,7 @@ class LocalNotificationService {
 
     await _notificationsPlugin.show(id, title, body, details);
   }
-  static Future<void> cancelNotification(int id) async {
-    await _notificationsPlugin.cancel(id);
-  }
+  
   
 
 }
